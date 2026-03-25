@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Upload Dataset - AutoML System</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:black;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.navbar h2{
+    margin:0;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.navbar a:hover{
+    color:#00d4ff;
+}
+
+/* MAIN CARD */
+
+.container{
+
+    width:450px;
+    margin:80px auto;
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    backdrop-filter: blur(10px);
+}
+
+/* INPUT */
+
+input[type=file],
+input[type=text]{
+
+    width:90%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:5px;
+    border:none;
+}
+
+/* BUTTON */
+
+button{
+
+    padding:12px 25px;
+    margin-top:20px;
+    border:none;
+    border-radius:5px;
+    background:#00d4ff;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00aacc;
+}
+
+/* RESULT BOX */
+
+.result{
+
+    margin-top:30px;
+    background:rgba(0,255,150,0.2);
+    padding:15px;
+    border-radius:8px;
+}
+
+.footer{
+
+    text-align:center;
+    margin-top:50px;
+    color:gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<h2>⚡ AutoML System</h2>
+
+<div>
+
+<a href="/">Home</a>
+<a href="/upload">Upload</a>
+<a href="/predict">Predict</a>
+
+</div>
+
+</div>
+
+
+<!-- UPLOAD CARD -->
+
+<div class="container">
+
+<h2>Upload Dataset for AutoML Training</h2>
+
+<form method="post" enctype="multipart/form-data">
+
+Dataset CSV:
+<br>
+
+<input type="file" name="file" required>
+
+<br><br>
+
+Target Column Name:
+<br>
+
+<input type="text" name="target" placeholder="example: pass, price, yield" required>
+
+<br>
+
+<button type="submit">
+
+Train Model Automatically
+
+</button>
+
+</form>
+
+
+<!-- RESULT DISPLAY -->
+
+{% if model_name %}
+
+<div class="result">
+
+<h3>Training Complete ✅</h3>
+
+<p><b>Best Model:</b> {{ model_name }}</p>
+
+<p><b>Problem Type:</b> {{ problem_type }}</p>
+
+<p><b>Score:</b> {{ score }}</p>
+
+</div>
+
+{% endif %}
+
+
+</div>
+
+
+<div class="footer">
+
+© 2026 AutoML System | FastAPI + MLflow
+
+</div>
+
+
+</body>
+</html>

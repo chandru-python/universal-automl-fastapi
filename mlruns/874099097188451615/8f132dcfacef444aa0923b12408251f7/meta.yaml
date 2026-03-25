@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Edify/Desktop/auto_ml/mlruns/874099097188451615/8f132dcfacef444aa0923b12408251f7/artifacts
+end_time: 1771231817219
+entry_point_name: ''
+experiment_id: '874099097188451615'
+lifecycle_stage: active
+run_id: 8f132dcfacef444aa0923b12408251f7
+run_name: LogisticRegression
+run_uuid: 8f132dcfacef444aa0923b12408251f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771231787403
+status: 3
+tags: []
+user_id: Edify

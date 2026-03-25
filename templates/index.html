@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoML Prediction System</title>
+
+<style>
+
+/* same styles as your code (kept unchanged) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.overlay {
+    background: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,20,40,0.8));
+    height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: rgba(10,20,30,0.95);
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #00d4ff;
+}
+
+/* CONTENT */
+
+.content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1 {
+    font-size: 3rem;
+}
+
+.content p {
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.upload-btn {
+    background: linear-gradient(135deg, #7b2ff7, #00d4ff);
+    color: white;
+}
+
+.predict-btn {
+    background: linear-gradient(135deg, #ff9800, #f57c00);
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+   
+    <div class="navbar">
+
+        <h2>⚡ AutoML System</h2>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/upload">Upload Dataset</a>
+            <a href="/predict">Prediction</a>
+            <a href="/about">About</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </div>
+
+    </div>
+
+
+
+    <div class="content">
+
+        <h1>AutoML Prediction System</h1>
+
+        <p>Upload Dataset → Train Model → Predict Automatically</p>
+
+        <a href="/upload">
+            <button class="btn upload-btn">
+                📤 Upload Dataset & Train Model
+            </button>
+        </a>
+
+        <br>
+
+        <a href="/predict">
+            <button class="btn predict-btn">
+                🚀 Start Prediction
+            </button>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 AutoML System | FastAPI + MLflow + Docker
+    </div>
+
+</div>
+
+</body>
+</html>

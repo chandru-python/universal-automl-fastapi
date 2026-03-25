@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Edify/Desktop/auto_ml/mlruns/874099097188451615/b81865d0c5b64ca6bb9eab6db82de823/artifacts
+end_time: 1771225123864
+entry_point_name: ''
+experiment_id: '874099097188451615'
+lifecycle_stage: active
+run_id: b81865d0c5b64ca6bb9eab6db82de823
+run_name: LR
+run_uuid: b81865d0c5b64ca6bb9eab6db82de823
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771225123683
+status: 4
+tags: []
+user_id: Edify

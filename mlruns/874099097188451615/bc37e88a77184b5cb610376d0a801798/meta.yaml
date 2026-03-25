@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Edify/Desktop/auto_ml/mlruns/874099097188451615/bc37e88a77184b5cb610376d0a801798/artifacts
+end_time: 1771227341003
+entry_point_name: ''
+experiment_id: '874099097188451615'
+lifecycle_stage: active
+run_id: bc37e88a77184b5cb610376d0a801798
+run_name: RandomForestClassifier
+run_uuid: bc37e88a77184b5cb610376d0a801798
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771227334482
+status: 3
+tags: []
+user_id: Edify

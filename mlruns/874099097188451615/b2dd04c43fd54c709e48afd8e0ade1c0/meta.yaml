@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Edify/Desktop/auto_ml/mlruns/874099097188451615/b2dd04c43fd54c709e48afd8e0ade1c0/artifacts
+end_time: 1771393455852
+entry_point_name: ''
+experiment_id: '874099097188451615'
+lifecycle_stage: active
+run_id: b2dd04c43fd54c709e48afd8e0ade1c0
+run_name: SVM
+run_uuid: b2dd04c43fd54c709e48afd8e0ade1c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771393446287
+status: 3
+tags: []
+user_id: Edify

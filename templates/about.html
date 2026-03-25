@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About - AutoML System</title>
+
+<style>
+
+/* BODY */
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:black;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.navbar h2{
+    margin:0;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.navbar a:hover{
+    color:#00d4ff;
+}
+
+
+/* MAIN CARD */
+
+.container{
+
+    width:700px;
+    margin:80px auto;
+    background:rgba(255,255,255,0.1);
+    padding:40px;
+    border-radius:10px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+    text-align:center;
+}
+
+/* TITLE */
+
+h1{
+    margin-bottom:20px;
+    color:#00d4ff;
+}
+
+/* PARAGRAPH */
+
+p{
+
+    line-height:1.8;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+/* FEATURE LIST */
+
+.features{
+
+    text-align:left;
+    margin-top:20px;
+}
+
+.features li{
+
+    margin:10px 0;
+}
+
+/* BUTTON */
+
+button{
+
+    padding:12px 25px;
+    margin-top:20px;
+    border:none;
+    border-radius:5px;
+    background:#00d4ff;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00aacc;
+}
+
+/* FOOTER */
+
+.footer{
+
+    text-align:center;
+    margin-top:40px;
+    color:gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<h2>⚡ AutoML System</h2>
+
+<div>
+
+<a href="/">Home</a>
+<a href="/upload">Upload</a>
+<a href="/predict">Predict</a>
+<a href="/login">Login</a>
+<a href="/register">Register</a>
+
+</div>
+
+</div>
+
+
+<!-- CONTENT -->
+
+<div class="container">
+
+<h1>About AutoML Prediction System</h1>
+
+<p>
+
+The AutoML Prediction System is an intelligent web-based platform that automatically trains and deploys Machine Learning models without requiring manual coding or ML expertise. Users can upload their datasets, and the system will automatically perform data preprocessing, model training, evaluation, and deployment.
+
+</p>
+
+<p>
+
+The system supports both Classification and Regression problems. It automatically detects the dataset type, selects the best-performing model, and deploys it for real-time predictions through a user-friendly interface.
+
+</p>
+
+
+<div class="features">
+
+<h3>Key Features:</h3>
+
+<ul>
+
+<li>Upload any CSV dataset for automatic training</li>
+
+<li>Automatic data preprocessing and feature encoding</li>
+
+<li>Automatic model selection and training</li>
+
+<li>Supports Classification and Regression</li>
+
+<li>Automatic deployment of trained model</li>
+
+<li>Dynamic prediction interface based on dataset features</li>
+
+<li>MLflow integration for experiment tracking</li>
+
+<li>FastAPI-based high-performance backend</li>
+
+</ul>
+
+</div>
+
+
+<p>
+
+This system demonstrates a complete end-to-end AutoML pipeline, making Machine Learning accessible, scalable, and easy to use for real-world applications.
+
+</p>
+
+
+<a href="/">
+
+<button>
+
+Back to Home
+
+</button>
+
+</a>
+
+
+</div>
+
+
+<div class="footer">
+
+© 2026 AutoML Prediction System | FastAPI + MLflow + Docker
+
+</div>
+
+
+</body>
+</html>
